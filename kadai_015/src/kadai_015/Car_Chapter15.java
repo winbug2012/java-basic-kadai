@@ -27,22 +27,44 @@ public class Car_Chapter15 {
 	
 	public void gearChange(int afterGear) {
 		if(afterGear==1) {
-			System.out.println("ギア１に切り替えました");
+			this.gear=1;
+			this.speed=10;
 		}else if(afterGear==2) {
-			System.out.println("ギア１から2に切り替えました");
+			this.gear=2;
+			this.speed=20;
 		}else if(afterGear==3) {
-			System.out.println("ギア１から3に切り替えました");
+			this.gear=3;
+			this.speed=30;
 		}else if(afterGear==4) {
-			System.out.println("ギア１から4に切り替えました");
+			this.gear=4;
+			this.speed=40;
 		}else if(afterGear==5) {
-			System.out.println("ギア１から5に切り替えました");
+			this.gear=5;
+			this.speed=50;
 		}else {
-			System.out.println("ギア１に切り替えました");
+			this.speed=10;
 		}
 		
 	}
 	
 	public void run() {
-		System.out.println("速度は時速30kmです");
+		if(this.speed==10) {
+			System.out.println("ギア1から1に切り替えました");
+			System.out.println("速度は時速10kmです");
+		}else if(this.speed==20) {
+			System.out.println("ギア1から2に切り替えました");
+			System.out.println("速度は時速20kmです");
+		}else if(this.speed==30) {
+			System.out.println("ギア1から3に切り替えました");
+			System.out.println("速度は時速30kmです");
+		}else if(this.speed==40) {
+			System.out.println("ギア1から4に切り替えました");
+			System.out.println("速度は時速40kmです");
+		}else if(this.speed==50) {
+			System.out.println("ギア1から5に切り替えました");
+			System.out.println("速度は時速50kmです");
+		}else{
+			System.out.println("速度は時速10kmです");
+		}
 	}
 }
