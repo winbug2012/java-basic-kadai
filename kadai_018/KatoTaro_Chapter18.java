@@ -2,12 +2,7 @@ package kadai_018;
 
 public class KatoTaro_Chapter18 extends Kato_Chapter18{
 	
-	
-	public KatoTaro_Chapter18() {	//コンストラクタ
-	        super();	//親クラスのコンストラクタを呼ぶ
-	        setGivenName();	//コンストラクタの中で普通のメソッドを呼ぶ
-	}
-	
+
 	public void setGivenName() {
 		this.givenName="太郎";
 		
